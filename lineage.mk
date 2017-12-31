@@ -4,7 +4,7 @@ $(call inherit-product, device/agm/a3/full_a3.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+#$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 PRODUCT_NAME := lineage_a3
 BOARD_VENDOR := AGM
