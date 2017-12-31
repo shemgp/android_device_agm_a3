@@ -16,10 +16,10 @@
 
 BOARD_VENDOR := AGM
 
-DEVICE_PATH := device/agm/a3
+DEVICE_PATH := device/agm/AGMA3EU
 
 # Include headers if available
-TARGET_SPECIFIC_HEADER_PATH := device/agm/a3/include
+TARGET_SPECIFIC_HEADER_PATH := device/agm/AGMA3EU/include
 
 # Architecture
 TARGET_ARCH := arm64
@@ -54,7 +54,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 ifeq ($(TARGET_PREBUILT_KERNEL),)
         #LOCAL_KERNEL := $(DEVICE_PATH)/kernel
 	TARGET_KERNEL_ARCH := arm64
-	TARGET_KERNEL_SOURCE := kernel/agm/a3
+	TARGET_KERNEL_SOURCE := kernel/agm/msm8952
 	TARGET_KERNEL_CONFIG := msm8994_defconfig
 	TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 	#TARGET_USES_UNCOMPRESSED_KERNEL := true
@@ -173,4 +173,4 @@ WIFI_DRIVER_FW_PATH_AP      := "ap"
 WIFI_DRIVER_FW_PATH_STA     := "sta"
 
 # inherit from the proprietary version
--include vendor/agm/a3/BoardConfigVendor.mk
+-include vendor/agm/AGMA3EU/BoardConfigVendor.mk

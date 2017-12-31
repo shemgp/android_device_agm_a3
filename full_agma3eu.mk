@@ -19,11 +19,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from AGM X1 device
-$(call inherit-product, device/agm/a3/device.mk)
+$(call inherit-product, device/agm/AGMA3EU/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_DEVICE := a3
-PRODUCT_NAME := full_a3
+PRODUCT_DEVICE := AGMA3EU
+PRODUCT_NAME := full_AGMA3EU
 PRODUCT_BRAND := AGM
 PRODUCT_MODEL := AGM X1
 PRODUCT_MANUFACTURER := AGM
